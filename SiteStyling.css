@@ -1,4 +1,4 @@
-/* Font Import */
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
 
 * {
@@ -14,7 +14,7 @@ body {
     line-height: 1.6;
 }
 
-/* Navigation Styling */
+
 header {
     position: fixed;
     width: 100%;
@@ -53,7 +53,7 @@ nav.Bar .nav-links a:hover {
     color: #A362FF;
 }
 
-/* Top Left Section */
+
 .Top-left {
     min-height: 100vh;
     display: flex;
@@ -90,7 +90,6 @@ nav.Bar .nav-links a:hover {
     font-size: 1.2rem;
 }
 
-/* Core Section */
 .Core {
     background: radial-gradient(circle at center, rgba(50, 15, 133, 0.3) 0%, transparent 70%);
     padding: 50px;
@@ -114,7 +113,7 @@ nav.Bar .nav-links a:hover {
     color: #A9A9A9;
 }
 
-/* Tech Stack Section */
+
 .TechStack {
     padding: 50px;
     text-align: center;
@@ -136,8 +135,7 @@ nav.Bar .nav-links a:hover {
     height: auto;
 }
 
-/* Featured Project Sections */
-/* Featured Project Section */
+
 .Featured.Project {
     display: flex;
     flex-direction: column;
@@ -164,7 +162,7 @@ nav.Bar .nav-links a:hover {
     margin-bottom: 20px;
 }
 
-/* Project Card Layout */
+
 .Project-Container {
     display: flex;
     flex-wrap: wrap;
@@ -199,7 +197,7 @@ nav.Bar .nav-links a:hover {
     transform: scale(1.05);
 }
 
-/* Project Button */
+
 .Project-Card button {
     background-color: #A362FF;
     color: #11071F;
@@ -215,7 +213,7 @@ nav.Bar .nav-links a:hover {
     background-color: #8532FF;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     .Project-Container {
         flex-direction: column;
@@ -224,7 +222,7 @@ nav.Bar .nav-links a:hover {
 }
 
 
-/* Footer */
+
 footer {
     background-color: #1A0B2E;
     padding: 50px;
@@ -304,7 +302,7 @@ footer p {
     color: #A9A9A9;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     nav.Bar {
         padding: 15px;
@@ -341,15 +339,15 @@ footer p {
     animation: scroll 12s linear infinite;
 }
 
-/* Force all images to be the same size */
+
 .ribbon-track img {
-    width: 100px;  /* Set a fixed width */
-    height: 100px; /* Set a fixed height */
-    object-fit: contain; /* Maintain aspect ratio inside the box */
+    width: 100px;  
+    height: 100px; 
+    object-fit: contain; 
     filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5));
 }
 
-/* Scrolling Animation */
+
 @keyframes scroll {
     from {
         transform: translateX(0);
