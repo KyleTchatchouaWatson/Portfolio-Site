@@ -356,3 +356,35 @@ footer p {
         transform: translateX(-50%);
     }
 }
+
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .contact-left {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .contact-left-title h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .contact-inputs {
+        width: 100%;
+        padding: 12px;
+        font-size: 1rem;
+        border-radius: 8px;
+    }
+
+    footer button {
+        width: 100%;
+        padding: 12px;
+        font-size: 1.1rem;
+        border-radius: 8px;
+    }
+}
