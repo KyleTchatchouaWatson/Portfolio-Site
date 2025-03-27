@@ -197,7 +197,10 @@ nav.Bar .nav-links a:hover {
     transform: scale(1.05);
 }
 
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 .Project-Card button {
     background-color: #A362FF;
     color: #11071F;
@@ -213,7 +216,10 @@ nav.Bar .nav-links a:hover {
     background-color: #8532FF;
 }
 
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 @media (max-width: 768px) {
     .Project-Container {
         flex-direction: column;
@@ -222,7 +228,10 @@ nav.Bar .nav-links a:hover {
 }
 
 
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 footer {
     background-color: #1A0B2E;
     padding: 50px;
@@ -388,3 +397,14 @@ footer p {
         border-radius: 8px;
     }
 }
+<<<<<<< Updated upstream
+=======
+.cursor {
+    font-weight: bold;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+>>>>>>> Stashed changes
