@@ -1,6 +1,5 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -47,10 +46,62 @@ nav.Bar .nav-links a {
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
+    position: relative;
+}
+
+nav.Bar .nav-links a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 3px;
+    background-color: #A362FF;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+nav.Bar .nav-links a:hover::after {
+    transform: scaleX(1);
 }
 
 nav.Bar .nav-links a:hover {
     color: #A362FF;
+}
+
+nav .menu-toggle {
+    display: none;
+    font-size: 1.8rem;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    nav.Bar {
+        padding: 15px;
+        flex-direction: column;
+    }
+
+    nav.Bar .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: rgba(20, 20, 20, 0.95);
+        border-radius: 10px;
+        padding: 15px;
+        width: 200px;
+        text-align: center;
+    }
+
+    nav.Bar .nav-links.show {
+        display: flex;
+    }
+
+    nav .menu-toggle {
+        display: block;
+    }
 }
 
 
@@ -197,10 +248,6 @@ nav.Bar .nav-links a:hover {
     transform: scale(1.05);
 }
 
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
 .Project-Card button {
     background-color: #A362FF;
     color: #11071F;
@@ -216,10 +263,6 @@ nav.Bar .nav-links a:hover {
     background-color: #8532FF;
 }
 
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
 @media (max-width: 768px) {
     .Project-Container {
         flex-direction: column;
@@ -228,10 +271,6 @@ nav.Bar .nav-links a:hover {
 }
 
 
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
 footer {
     background-color: #1A0B2E;
     padding: 50px;
@@ -397,8 +436,6 @@ footer p {
         border-radius: 8px;
     }
 }
-<<<<<<< Updated upstream
-=======
 .cursor {
     font-weight: bold;
     animation: blink 0.7s infinite;
@@ -407,4 +444,3 @@ footer p {
 @keyframes blink {
     50% { opacity: 0; }
 }
->>>>>>> Stashed changes
