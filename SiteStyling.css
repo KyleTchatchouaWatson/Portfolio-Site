@@ -605,6 +605,7 @@ section h2 {
     background: linear-gradient(135deg, rgba(124,58,237,0.06), transparent);
     opacity: 0;
     transition: opacity var(--transition);
+    pointer-events: none;
 }
 
 .Project-Card:hover {
@@ -657,7 +658,10 @@ section h2 {
     font-weight: 300;
 }
 
-.Project-Card button {
+.card-btn {
+    display: inline-block;
+    position: relative;
+    z-index: 10;
     font-family: var(--font-head);
     font-size: 0.8rem;
     font-weight: 700;
@@ -667,13 +671,23 @@ section h2 {
     border: 1px solid rgba(124,58,237,0.3);
     padding: 9px 18px;
     border-radius: 6px;
+    text-decoration: none;
     cursor: pointer;
     transition: all var(--transition);
+    margin-top: 4px;
 }
-.Project-Card button:hover {
+.card-btn:hover {
     background: rgba(124,58,237,0.25);
     border-color: var(--accent);
     color: var(--white);
+}
+
+.tech-stack {
+    font-size: 0.75rem !important;
+    color: rgba(139, 130, 160, 0.7) !important;
+    letter-spacing: 0.04em;
+    margin-bottom: 4px !important;
+    font-weight: 500 !important;
 }
 
 /* ─── FOOTER ────────────────────────────────────────────────────────── */
