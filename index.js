@@ -1,14 +1,22 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const roles = ["Software Engineer", "Full-Stack Developer","Gamer","Content Creator","Uncle","Entrepreneur"];
+    const roles = [
+        "Software Engineer",
+        "Full-Stack Developer",
+        "React Developer",
+        "Python Engineer",
+        "Gamer",
+        "Content Creator",
+        "Entrepreneur"
+    ];
     let roleIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
     const textElement = document.querySelector(".dynamic-text");
+    if (!textElement) return;
 
     function typeEffect() {
         const currentRole = roles[roleIndex];
         const displayText = currentRole.substring(0, charIndex);
-
         textElement.textContent = displayText;
 
         if (!isDeleting && charIndex < currentRole.length) {
@@ -22,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if (!isDeleting) {
                 roleIndex = (roleIndex + 1) % roles.length;
             }
-            setTimeout(typeEffect, 200);
+            setTimeout(typeEffect, 1000);
         }
     }
 
