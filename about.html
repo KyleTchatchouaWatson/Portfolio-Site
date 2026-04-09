@@ -4,77 +4,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Who is Kyle?</title>
-    <link rel="icon" href="Assets/Logo.png" type="image/png" loading="eager">
+    <link rel="icon" href="Assets/Logo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="about.css">
 </head>
 <body>
     <header>
         <nav class="Bar">
-            <a href="index.html" class="logo"> <img src="Assets/Logo.png" alt="Logo" loading="eager"></a>
+            <a href="index.html" class="logo">
+                <img src="Assets/Logo.png" alt="Logo" loading="eager">
+            </a>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">Apart From Code</a></li>
+                <li><a href="about.html" class="active">Apart From Code</a></li>
                 <li><a href="https://github.com/KyleTchatchouaWatson" target="_blank">Lab</a></li>
             </ul>
+            <span class="menu-toggle" onclick="this.parentElement.querySelector('.nav-links').classList.toggle('show')">☰</span>
         </nav>
     </header>
-    
+
+    <div class="page-hero">
+        <div class="orb orb-a"></div>
+        <div class="orb orb-b"></div>
+        <div class="section-label">Beyond the Terminal</div>
+        <h1>Who is Kyle<br><span class="highlight">Away from Code?</span></h1>
+        <p>A human first. Developer second.</p>
+    </div>
+
     <section class="card-container">
+
         <div class="card">
             <img class="Who" src="Assets/Bitmoji Sticker.png" alt="Bitmoji" loading="eager">
-            <h1>Who is Kyle away from Code</h1>
-            <p>I am a completely different person outside my workspace. I spend time with family, work on self-improvement, or just relax. I love challenges, pushing my limits, and helping others.</p>
+            <h2>The Person Behind the Screen</h2>
+            <p>Outside my workspace, I'm a completely different person. I spend time with family, work on self-improvement, or just relax. I love challenges, pushing my limits, and helping others grow alongside me.</p>
         </div>
-        
+
         <div class="card">
-            <img src ="Assets/football.png" alt="football" loading="eager">
-            <h1>My Passions</h1>
+            <img src="Assets/football.png" alt="football" loading="eager">
+            <h2>My Passions</h2>
             <ul>
-                <li><strong>Football</strong> - A Manchester United fan since 11, passionate about the energy of the game.</li>
-                <li><strong>Coding</strong> - I enjoy creating something from nothing, which fuels my love for full-stack development.</li>
-                <li><strong>PC Building & Research</strong> - Staying ahead of tech trends is my thing!</li>
-                <li><strong>Gaming</strong> - A way to connect with friends globally.</li>
-                <li><strong>Cars</strong> - Passionate about motorsports and car tech.</li>
-                <li><strong>Content Creation</strong> - Capturing and sharing my journey through YouTube.</li>
+                <li><strong>Football</strong> — A Manchester United fan since 11. Passionate about the energy of the beautiful game.</li>
+                <li><strong>Coding</strong> — Creating something from nothing fuels my love for full-stack development.</li>
+                <li><strong>PC Building & Research</strong> — Staying ahead of tech trends is just who I am.</li>
+                <li><strong>Gaming</strong> — A way to connect with friends globally.</li>
+                <li><strong>Cars</strong> — Passionate about motorsports and automotive tech.</li>
+                <li><strong>Content Creation</strong> — Capturing and sharing my journey through YouTube.</li>
             </ul>
-            <a href="https://www.youtube.com/@ohitskyleza" target="_blank"><button>My Youtube Channel</button></a>
         </div>
-        
+
         <div class="card">
             <img src="Assets/son and father.jpg" alt="Son and Father" loading="eager">
-            <h1>My Role Models</h1>
-            <p><strong>My Dad</strong> - The embodiment of dedication and perseverance.</p>
-            <p><strong>Bruno Fernandes</strong> - A footballer who inspires me through his leadership and work ethic.</p>
+            <h2>My Role Models</h2>
+            <p><strong>My Dad</strong> — The embodiment of dedication and perseverance. My greatest inspiration.</p>
+            <p style="margin-top: 14px;"><strong>Bruno Fernandes</strong> — A footballer who inspires me through relentless leadership and work ethic.</p>
         </div>
-        
+
         <div class="card">
-            <img src="Assets/Scrimba Front End Developer Path.png" loading="eager">
-            <h1>Education & Certifications</h1>
+            <img src="Assets/Scrimba Front End Developer Path.png" loading="eager" alt="Scrimba cert">
+            <h2>Education & Certifications</h2>
             <ul>
-                <li>Milnerton Highschool (2018-2022)</li>
-                <li>Eduvos (2023-Present)</li>
-                <li>Learn HTML & CSS - Scrimba</li>
-                <li>Front-End Developer Path - Scrimba</li>
-                <li>Python for Data Science-EBU Luxembourg</li>
+                <li>🏫 Milnerton High School <span class="year">2018–2022</span></li>
+                <li>🎓 Eduvos — BSc Hons IT, Software Engineering <span class="year">2023–Present</span></li>
+                <li>📜 Learn HTML & CSS — Scrimba</li>
+                <li>📜 Front-End Developer Path — Scrimba</li>
+                <li>📜 Python for Data Science — EBU Luxembourg</li>
             </ul>
         </div>
-        
+
         <div class="card">
-            <img src="Assets/Sample Code 2.jpg" loading="eager">
-            <h1>Top 5 Highest Grades</h1>
-            <ul>
-                <li>C++ - 100%-Eduvos</li>
-                <li>Mobile App Development - 95%-Eduvos</li>
-                <li>Python for Data Science - 95%-EBU Luxembourg</li>
-                <li>Usability Engineering - 87%-Eduvos</li>
-                <li>Programming in Java - 85%-Eduvos</li>
-            </ul>
+            <img src="Assets/Sample Code 2.jpg" loading="eager" alt="Code">
+            <h2>Top 5 Academic Results</h2>
+            <div class="grade-list">
+                <div class="grade-row">
+                    <span class="grade-subject">C++</span>
+                    <div class="grade-bar-wrap"><div class="grade-bar" style="width:100%"></div></div>
+                    <span class="grade-score">100%</span>
+                </div>
+                <div class="grade-row">
+                    <span class="grade-subject">Mobile App Dev</span>
+                    <div class="grade-bar-wrap"><div class="grade-bar" style="width:95%"></div></div>
+                    <span class="grade-score">95%</span>
+                </div>
+                <div class="grade-row">
+                    <span class="grade-subject">Python for Data Science</span>
+                    <div class="grade-bar-wrap"><div class="grade-bar" style="width:95%"></div></div>
+                    <span class="grade-score">95%</span>
+                </div>
+                <div class="grade-row">
+                    <span class="grade-subject">Usability Engineering</span>
+                    <div class="grade-bar-wrap"><div class="grade-bar" style="width:87%"></div></div>
+                    <span class="grade-score">87%</span>
+                </div>
+                <div class="grade-row">
+                    <span class="grade-subject">Programming in Java</span>
+                    <div class="grade-bar-wrap"><div class="grade-bar" style="width:85%"></div></div>
+                    <span class="grade-score">85%</span>
+                </div>
+            </div>
         </div>
+
     </section>
-    
+
     <footer>
-        <p>Well, that’s me! 😂</p>
-        <p>Copyright 2025 Kyle Tchatchoua Watson</p>
+        <p>That's me in a nutshell 😄</p>
+        <p>© 2025 Kyle Tchatchoua Watson</p>
     </footer>
 </body>
 </html>

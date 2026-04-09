@@ -3,202 +3,292 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hi,I am Kyle!</title>
+    <title>Kyle Tchatchoua Watson</title>
     <link rel="icon" href="Assets/Logo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="SiteStyling.css">
-    
 </head>
 <header>
     <nav class="Bar">
-       <a href="index.html" class="logo"> <img src="Assets/Logo.png" alt="Logo" loading="eager"></a>
-       <ul class="nav-links">
-       <li><a href="index.html">Home</a></li>
-       <li><a href="about.html">Apart From Code </a></li>
-       <li><a href="https://github.com/KyleTchatchouaWatson" target="_blank">Lab</a></li>
-       </ul>
+        <a href="index.html" class="logo">
+            <img src="Assets/Logo.png" alt="Logo" loading="eager">
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">Apart From Code</a></li>
+            <li><a href="https://github.com/KyleTchatchouaWatson" target="_blank">Lab</a></li>
+        </ul>
+        <span class="menu-toggle" onclick="this.parentElement.querySelector('.nav-links').classList.toggle('show')">☰</span>
     </nav>
 </header>
 <body>
-    <section class="Top-left">
-        <img src="Assets/Bitmoji Sticker.png" alt="image of a Bitmoji working" loading="eager">
-        <h1 class="Img words">Hello! I am Kyle!</h1>
-        <p id="role">A <span class="dynamic-text"></span></p>
-        <p>Crafting seamless experiences, front to back.</p>
-        <h3>If the interface doesn’t impress you, the backend never will.🚀</h3>
-    </section>
-    <script src="index.js"></script>
-    
-    
-<section class="Core">
-<h1> I'm A Full Stack Developer</h1>
-<h3>Currently, Finishing off my Third Year at University</h3>
-<p>
-    A Student in Software engineering who self taught himself front-end. I
-     make meaningful and delightful websites and softwares which create an 
-     equilibrium between users needs and business goals some might add im 
-     good to be a dev ops also.
-</p>
-</section>
-<section class="TechStack">
-    <h1>My Tech Stack</h1>
-    <h2>I'm currently seeking job opportunities. Below is my tech stack
-    looking forward to contributing my skills and expertise in these areas!</h2>
-    <img src="Assets/Tech Stack.png" alt="My Tech Stack" loading="lazy">
-</section>
-<div class="tech-ribbon">
-    <div class="ribbon-track">
-        <img src="Assets/TechStack/Html.png" alt="HTML" loading="eager">
-        <img src="Assets/TechStack/Css.png" alt="CSS" loading="lazy">
-        <img src="Assets/TechStack/JavaScript.png" alt="JavaScript" loading="eager">
-        <img src="Assets/TechStack/My Sql.png" alt="MySql" loading="eager">
-        <img src="Assets/TechStack/Php.png" alt="PHP" loading="eager">
-        <img src="Assets/TechStack/Mongo DB.png" alt="Mongo" loading="eager">
-        <img src="Assets/TechStack/java.png" alt="Java" loading="eager">
-        <img src="Assets/TechStack/Python.png" alt="Python" loading="eager">
-        
-        <img src="Assets/TechStack/Html.png" alt="HTML" loading="eager">
-        <img src="Assets/TechStack/Css.png" alt="CSS" loading="eager">
-        <img src="Assets/TechStack/JavaScript.png" alt="JavaScript" loading="eager">
-        <img src="Assets/TechStack/My Sql.png" alt="MySql" loading="eager">
-        <img src="Assets/TechStack/Php.png" alt="PHP" loading="eager">
-        <img src="Assets/TechStack/Mongo DB.png" alt="Mongo" loading="eager">
-        <img src="Assets/TechStack/java.png" alt="Java" loading="eager">
-        <img src="Assets/TechStack/Python.png" alt="Python" loading="eager">
 
-        <img src="Assets/TechStack/Html.png" alt="HTML" loading="eager">
-        <img src="Assets/TechStack/Css.png" alt="CSS" loading="eager">
-        <img src="Assets/TechStack/JavaScript.png" alt="JavaScript" loading="eager">
-        <img src="Assets/TechStack/My Sql.png" alt="MySql" loading="eager">
-        <img src="Assets/TechStack/Php.png" alt="PHP" loading="eager">
-        <img src="Assets/TechStack/Mongo DB.png" alt="Mongo" loading="eager">
-        <img src="Assets/TechStack/java.png" alt="Java" loading="eager">
-        <img src="Assets/TechStack/Python.png" alt="Python" loading="eager">
-    </div>
-</div>
-<section class="Featured Project">
-    <h3>Featured Projects</h3>
-    <div class="Project-Container">
-        
-        <div class="Project-Card">
-            <h1>Calculator</h1>
-            <img src="Assets/Calculator Project Picture.png" alt="Calculator Image" loading="eager">
-            <p>I developed a simple yet effective calculator app designed for ease of use. 
-               The app features a clean and intuitive interface, providing users with a 
-               seamless experience to perform basic calculations. It’s lightweight, 
-               responsive, and accessible across devices, making it an ideal tool for everyday tasks.
-            </p>
-            <a href="https://kylemadethis.netlify.app/" target="_blank"><button>Check Me Out!</button></a>
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="orb orb-3"></div>
+            <div class="grid-overlay"></div>
         </div>
-
-        <div class="Project-Card">
-            <h1>Valentine's Day</h1>
-            <img src="Assets/Valentines Day Project Picture.png" alt="Valentine's Project" loading="eager">
-            <p>I developed a web application for Valentine's Day that lets users ask someone to be 
-               their valentine. The catch? There’s only one option—'Yes.' The buttons are designed 
-               to be unmovable, ensuring a playful experience. Once 'Yes' is clicked, a celebratory 
-               GIF is displayed.
-            </p>
-            <a href="https://valentinesdaycrush.netlify.app/" target="_blank"><button>Check Me Out!</button></a>
-        </div>
-        <div class="Project-Card">
-            <h1>Golf 7 Gti</h1>
-            <img src="Assets/GTI Counter.png" alt="Golf 7 Gti" loading="eager">
-            <p>I developed a tracker to count how many GTIs I see in a day. 
-                This was just a small project to test my JavaScript skills, 
-                and also because I love GTIs.
-            </p>
-            <a href="https://letscountgtis.netlify.app/" target="_blank"><button>Check Me Out!</button></a>
-        </div>
-        <div class="Project-Card">
-            <h1>Business Card</h1>
-            <img src="Assets/BusinessCard.png" alt="Business card" loading="eager">
-            <p>I developed a digital business card that can be easily shared with others.
-            </p>
-            <a href="https://kylesportfoliocard.netlify.app/" target=_blank"><button>Check Me Out!</button></a>
-        </div>
-        <div class="Project-Card">
-            <h1>Weather Application</h1>
-            <img src="Assets/Weather App.png" alt="Weather Application" loading="eager">
-            <p>I created my very own weather application that can display the weather of any city worldwide. 
-            It also includes effects that mimic raindrops when it's raining and snowflakes when it's snowing.
-            </p>
-            <a href="https://weatherwithkyle.netlify.app/" target="_blank"><button>Check Me Out!</button></a>
-        </div>
-        <div class="Project-Card">
-            <h1>Prismyte:Your AI Trading Assistant</h1>
-            <img src="Assets/Trading.png" alt="Prismyte" loading="eager">
-            <p>Prismyte is an intelligent, AI-powered chatbot designed to assist traders with a wide range of trading-related queries.</p>
-            <a href="https://tradingmadeeasy.netlify.app/" target="_blank"><button>Check Me Out!</button></a>
-        </div>
-        <div class="Project-Card">
-            <h1>Uni Connect</h1>
-            <img src="Assets/Uni.png" alt="Uni Connect" loading="eager">
-            <p>UniConnect: A real-time communication platform with integrated camera functionality for seamless photo sharing and instant messaging.</p>
-            <a href="https://uniconnectlivechat.netlify.app/" target="_blank"><button>Check Me Out!</button></a>
-        </div>
-        <div class="Project-Card">
-            <h1>Bennies BookStore</h1>
-            <img src="Assets/Bennies.jpg" alt="Bennies BookStore" loading="eager">
-            <p>This project was developed as part of a University assignment to address challenges in Rural communities.</p>
-            <a href="https://benniesbookstore.infinityfreeapp.com/?i=1" target="_blank"><button>Check Me Out!</button></a>
-        </div>
-        <div class="Project-Card">
-            <h1>Misfit Ballerz Player ratings Software</h1>
-            <img src="Assets/Player Ratings.png" alt="Bennies BookStore" loading="eager">
-            <p>This project was created to allow the coach to track all players’ performances across the team and to understand how they feel about certain individuals’ performances (completely anonymously)..</p>
-            <a href="https://misfitballerz.infinityfree.me/" target="_blank"><button>Check Me Out!</button></a>
-        </div>
-         <div class="Project-Card">
-            <h1>Free Online PDF Editor </h1>
-            <img src="Assets/pdf custom.jpg" alt="Bennies BookStore" loading="eager">
-            <p>Frustrated with my family having to pay for simple PDF edits, I developed a professional, fast, and completely free online PDF editor as a better solution.</p>
-            <a href="https://pdfcustom.netlify.app/" target="_blank"><button>Check Me Out!</button></a>
-        </div>
-    </div>
-</section>
-</body>
-<footer>
-    <div class="contact-container">
-        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
-            <div class="contact-left-title">
-                <h2>Get In Touch</h2>
-                <hr>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                BSc Hons · Software Engineering · Available for Hire
             </div>
-            <input type="hidden" name="access_key" value="e6fd1fd6-39c8-4069-b6f8-203fdccd6c08">
-            <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
-            <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
-            <textarea name="Message" placeholder="Your Message" class="contact-inputs" required></textarea>
-            <button type="Submit" target="_blank">Submit</button>
-        </form>
-        <div class="contact-right">
-            <img src="Assets/Sample code.png" alt="Sample Code" loading="eager">
+            <div class="hero-avatar">
+                <img src="Assets/Bitmoji Sticker.png" alt="Kyle Bitmoji" loading="eager">
+                <div class="avatar-ring"></div>
+            </div>
+            <h1 class="hero-name">Kyle Tchatchoua<br><span class="name-accent">Watson</span></h1>
+            <p class="hero-role">A <span class="dynamic-text"></span><span class="cursor">|</span></p>
+            <p class="hero-tagline">Crafting seamless experiences, front to back.<br>
+            <em>If the interface doesn't impress you, the backend never will.</em> 🚀</p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn-primary">View My Work</a>
+                <a href="https://github.com/KyleTchatchouaWatson" target="_blank" class="btn-ghost">GitHub Lab ↗</a>
+            </div>
+        </div>
+        <div class="scroll-hint">
+            <span>scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="section-label">01 — About</div>
+        <div class="about-grid">
+            <div class="about-text">
+                <h2>Full Stack Developer<br><span class="highlight">& Problem Solver</span></h2>
+                <p>A Software Engineering student (BSc Honours) who self-taught front-end development and never stopped. I build meaningful, delightful digital products that create equilibrium between user needs and business goals — from pixel-perfect UIs to scalable backends.</p>
+                <div class="stat-row">
+                    <div class="stat">
+                        <span class="stat-num">10+</span>
+                        <span class="stat-label">Projects Shipped</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-num">BSc</span>
+                        <span class="stat-label">Hons IT · Soft. Eng.</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-num">Full</span>
+                        <span class="stat-label">Stack Capable</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack -->
+    <section class="TechStack">
+        <div class="section-label">02 — Stack</div>
+        <h2>My Tech Stack</h2>
+        <p class="section-sub">Tools I use to build exceptional products</p>
+        <div class="stack-grid">
+            <div class="stack-pill" data-cat="Frontend">
+                <img src="Assets/TechStack/Html.png" alt="HTML">
+                <span>HTML5</span>
+            </div>
+            <div class="stack-pill" data-cat="Frontend">
+                <img src="Assets/TechStack/Css.png" alt="CSS">
+                <span>CSS3</span>
+            </div>
+            <div class="stack-pill" data-cat="Frontend">
+                <img src="Assets/TechStack/JavaScript.png" alt="JavaScript">
+                <span>JavaScript</span>
+            </div>
+            <div class="stack-pill stack-new" data-cat="Frontend">
+                <div class="stack-icon react-icon">⚛</div>
+                <span>React</span>
+                <div class="new-badge">New</div>
+            </div>
+            <div class="stack-pill" data-cat="Backend">
+                <img src="Assets/TechStack/Php.png" alt="PHP">
+                <span>PHP</span>
+            </div>
+            <div class="stack-pill stack-new" data-cat="Backend">
+                <img src="Assets/TechStack/Python.png" alt="Python">
+                <span>Python</span>
+                <div class="new-badge">New</div>
+            </div>
+            <div class="stack-pill" data-cat="Backend">
+                <img src="Assets/TechStack/java.png" alt="Java">
+                <span>Java</span>
+            </div>
+            <div class="stack-pill" data-cat="Database">
+                <img src="Assets/TechStack/My Sql.png" alt="MySQL">
+                <span>MySQL</span>
+            </div>
+            <div class="stack-pill" data-cat="Database">
+                <img src="Assets/TechStack/Mongo DB.png" alt="MongoDB">
+                <span>MongoDB</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ribbon -->
+    <div class="tech-ribbon">
+        <div class="ribbon-track">
+            <img src="Assets/TechStack/Html.png" alt="HTML">
+            <img src="Assets/TechStack/Css.png" alt="CSS">
+            <img src="Assets/TechStack/JavaScript.png" alt="JS">
+            <img src="Assets/TechStack/My Sql.png" alt="MySQL">
+            <img src="Assets/TechStack/Php.png" alt="PHP">
+            <img src="Assets/TechStack/Mongo DB.png" alt="Mongo">
+            <img src="Assets/TechStack/java.png" alt="Java">
+            <img src="Assets/TechStack/Python.png" alt="Python">
+            <!-- Repeated sets -->
+            <img src="Assets/TechStack/Html.png" alt="HTML">
+            <img src="Assets/TechStack/Css.png" alt="CSS">
+            <img src="Assets/TechStack/JavaScript.png" alt="JS">
+            <img src="Assets/TechStack/My Sql.png" alt="MySQL">
+            <img src="Assets/TechStack/Php.png" alt="PHP">
+            <img src="Assets/TechStack/Mongo DB.png" alt="Mongo">
+            <img src="Assets/TechStack/java.png" alt="Java">
+            <img src="Assets/TechStack/Python.png" alt="Python">
+            <img src="Assets/TechStack/Html.png" alt="HTML">
+            <img src="Assets/TechStack/Css.png" alt="CSS">
+            <img src="Assets/TechStack/JavaScript.png" alt="JS">
+            <img src="Assets/TechStack/My Sql.png" alt="MySQL">
+            <img src="Assets/TechStack/Php.png" alt="PHP">
+            <img src="Assets/TechStack/Mongo DB.png" alt="Mongo">
+            <img src="Assets/TechStack/java.png" alt="Java">
+            <img src="Assets/TechStack/Python.png" alt="Python">
         </div>
     </div>
-    </div>
-    <h1>Lets Connect</h1>
-    <section class="Socials">
-        <a href="https://www.instagram.com/kylecodesza/" target="_blank">
-            <?xml version="1.0" encoding="utf-8"?>
-            <svg width="50px" height="50px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" fill="white"/>
-            <path d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z" fill="white"/>
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z" fill="white"/>
-            </svg>
-        </a>
-        <a href="https://www.linkedin.com/in/kyle-tchatchoua-watson/" target="_blank">
-            <?xml version="1.0" encoding="utf-8"?>
-<svg width="50px" height="50px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M6.5 8C7.32843 8 8 7.32843 8 6.5C8 5.67157 7.32843 5 6.5 5C5.67157 5 5 5.67157 5 6.5C5 7.32843 5.67157 8 6.5 8Z" fill="white"/>
-<path d="M5 10C5 9.44772 5.44772 9 6 9H7C7.55228 9 8 9.44771 8 10V18C8 18.5523 7.55228 19 7 19H6C5.44772 19 5 18.5523 5 18V10Z" fill="white"/>
-<path d="M11 19H12C12.5523 19 13 18.5523 13 18V13.5C13 12 16 11 16 13V18.0004C16 18.5527 16.4477 19 17 19H18C18.5523 19 19 18.5523 19 18V12C19 10 17.5 9 15.5 9C13.5 9 13 10.5 13 10.5V10C13 9.44771 12.5523 9 12 9H11C10.4477 9 10 9.44772 10 10V18C10 18.5523 10.4477 19 11 19Z" fill="white"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M20 1C21.6569 1 23 2.34315 23 4V20C23 21.6569 21.6569 23 20 23H4C2.34315 23 1 21.6569 1 20V4C1 2.34315 2.34315 1 4 1H20ZM20 3C20.5523 3 21 3.44772 21 4V20C21 20.5523 20.5523 21 20 21H4C3.44772 21 3 20.5523 3 20V4C3 3.44772 3.44772 3 4 3H20Z" fill="#0077b5"/>
-</svg>
-            </a>
-            <a href="https://github.com/KyleTchatchouaWatson" target="_blank">
-                <?xml version="1.0" encoding="utf-8"?>
-<svg width="50px" height="50px" viewBox="0 0 48 48" id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:none;stroke:white;stroke-linecap:round;stroke-linejoin:round;fill-rule:evenodd;}</style></defs><path class="cls-1" d="M24,2.5a21.5,21.5,0,0,0-6.8,41.9c1.08.2,1.47-.46,1.47-1s0-1.86,0-3.65c-6,1.3-7.24-2.88-7.24-2.88A5.7,5.7,0,0,0,9,33.68c-1.95-1.33.15-1.31.15-1.31a4.52,4.52,0,0,1,3.29,2.22c1.92,3.29,5,2.34,6.26,1.79a4.61,4.61,0,0,1,1.37-2.88c-4.78-.54-9.8-2.38-9.8-10.62a8.29,8.29,0,0,1,2.22-5.77,7.68,7.68,0,0,1,.21-5.69s1.8-.58,5.91,2.2a20.46,20.46,0,0,1,10.76,0c4.11-2.78,5.91-2.2,5.91-2.2a7.74,7.74,0,0,1,.21,5.69,8.28,8.28,0,0,1,2.21,5.77c0,8.26-5,10.07-9.81,10.61a5.12,5.12,0,0,1,1.46,4c0,2.87,0,5.19,0,5.9s.39,1.24,1.48,1A21.5,21.5,0,0,0,24,2.5"/></svg>
-            </a>
+
+    <!-- Projects -->
+    <section class="projects-section" id="projects">
+        <div class="section-label">03 — Work</div>
+        <h2>Featured Projects</h2>
+        <p class="section-sub">Things I've built with care</p>
+
+        <div class="Project-Container">
+
+            <div class="Project-Card">
+                <div class="card-tag">Tool</div>
+                <h3>Free Online PDF Editor</h3>
+                <img src="Assets/pdf custom.jpg" alt="PDF Editor" loading="lazy">
+                <p>Frustrated with family paying for simple PDF edits, I built a professional, fast, and completely free online PDF editor.</p>
+                <p>Tech Stack:Java Script, Html, Css</p>
+                <a href="https://pdfcustom.netlify.app/" target="_blank"><button>View Project ↗</button></a>
+            </div>
+
+            <div class="Project-Card">
+                <div class="card-tag">AI</div>
+                <h3>Prismyte: AI Trading Assistant</h3>
+                <img src="Assets/Trading.png" alt="Prismyte" loading="lazy">
+                <p>An intelligent, AI-powered chatbot designed to assist traders with a wide range of trading-related queries.</p>
+                <p>Tech Stack: Python, Java Script, Html, Css</p>
+                <a href="https://tradingmadeeasy.netlify.app/" target="_blank"><button>View Project ↗</button></a>
+            </div>
+
+            <div class="Project-Card">
+                <div class="card-tag">Full Stack</div>
+                <h3>Bennies BookStore</h3>
+                <img src="Assets/Bennies.jpg" alt="Bennies BookStore" loading="lazy">
+                <p>Developed as a University assignment to address real challenges in rural communities through accessible e-commerce.</p>
+                <p>Tech Stack: Php, Java Script, Html, Css</p>
+                <a href="https://benniesbookstore.infinityfreeapp.com/?i=1" target="_blank"><button>View Project ↗</button></a>
+            </div>
+
+            <div class="Project-Card">
+                <div class="card-tag">Real-time</div>
+                <h3>Uni Connect</h3>
+                <img src="Assets/Uni.png" alt="Uni Connect" loading="lazy">
+                <p>A real-time communication platform with integrated camera functionality for seamless photo sharing and instant messaging.
+                    <p>Tech Stack: Java, Java Swing, Jakarta Servlets, Endpoints, Java Script, Html, Css</p>
+                </p>
+                <a href="https://uniconnectlivechat.netlify.app/" target="_blank"><button>View Project ↗</button></a>
+            </div>
+
+            <div class="Project-Card">
+                <div class="card-tag">Fun</div>
+                <h3>Valentine's Day App</h3>
+                <img src="Assets/Valentines Day Project Picture.png" alt="Valentine's" loading="lazy">
+                <p>A playful Valentine's web app where the only answer is 'Yes.' Once clicked, a celebratory GIF appears.</p>
+                <p>Tech Stack: Java Script, Html, Css</p>
+                <a href="https://valentinesdaycrush.netlify.app/" target="_blank"><button>View Project ↗</button></a>
+            </div>
+
+            <div class="Project-Card">
+                <div class="card-tag">Client Work</div>
+                <h3>Hand Made By Bee</h3>
+                <img src="Assets/MadeByBee.jpeg" alt="Made By Bee="lazy">
+                <p>Made by Bee is a website I developed for a client to streamline and automate her business operations. The platform enables customers to place orders directly through the website, reducing reliance on manual order processing via her business phone number.</p>
+                <p>Tech Stack: App Script, Java Script, Html, Css</p>
+                <a href="http://handmadebybee.co.za/" target="_blank"><button>View Project ↗</button></a>
+            </div>
+
+            <div class="Project-Card">
+                <div class="card-tag">Client Work</div>
+                <h3>Gitech Plumbing</h3>
+                <img src="Assets/Gitech Plumbing.jpeg" alt="Plumbing" loading="lazy">
+                <p>Website Made for a client which helped to automate their business processes.</p>
+                <p>Tech Stack: Php, Java Script, Html, Css</p>
+                <a href="https://gitechplumbing.netlify.app/" target="_blank"><button>View Project ↗</button></a>
+            </div>
+
+        </div>
     </section>
-    <p>Copyright 2025  Kyle Tchatchoua Watson</p>
-</footer>
+
+    <!-- Contact / Footer -->
+    <footer id="contact">
+        <div class="footer-inner">
+            <div class="footer-headline">
+                <div class="section-label">04 — Contact</div>
+                <h2>Let's Build<br><span class="highlight">Something Great</span></h2>
+                <p>Open to full-time roles, internships, and freelance projects.</p>
+            </div>
+            <div class="contact-container">
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+                    <div class="contact-left-title">
+                        <h3>Get In Touch</h3>
+                        <hr>
+                    </div>
+                    <input type="hidden" name="access_key" value="e6fd1fd6-39c8-4069-b6f8-203fdccd6c08">
+                    <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+                    <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+                    <textarea name="Message" placeholder="Your Message" class="contact-inputs" required></textarea>
+                    <button type="submit">Send Message →</button>
+                </form>
+                <div class="contact-right">
+                    <img src="Assets/Sample code.png" alt="Sample Code" loading="lazy">
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <h3>Let's Connect</h3>
+            <section class="Socials">
+                <a href="https://www.instagram.com/kylecodesza/" target="_blank" aria-label="Instagram">
+                    <svg width="28px" height="28px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" fill="currentColor"/>
+                        <path d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z" fill="currentColor"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z" fill="currentColor"/>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/kyle-tchatchoua-watson/" target="_blank" aria-label="LinkedIn">
+                    <svg width="28px" height="28px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.5 8C7.32843 8 8 7.32843 8 6.5C8 5.67157 7.32843 5 6.5 5C5.67157 5 5 5.67157 5 6.5C5 7.32843 5.67157 8 6.5 8Z" fill="currentColor"/>
+                        <path d="M5 10C5 9.44772 5.44772 9 6 9H7C7.55228 9 8 9.44771 8 10V18C8 18.5523 7.55228 19 7 19H6C5.44772 19 5 18.5523 5 18V10Z" fill="currentColor"/>
+                        <path d="M11 19H12C12.5523 19 13 18.5523 13 18V13.5C13 12 16 11 16 13V18.0004C16 18.5527 16.4477 19 17 19H18C18.5523 19 19 18.5523 19 18V12C19 10 17.5 9 15.5 9C13.5 9 13 10.5 13 10.5V10C13 9.44771 12.5523 9 12 9H11C10.4477 9 10 9.44772 10 10V18C10 18.5523 10.4477 19 11 19Z" fill="currentColor"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20 1C21.6569 1 23 2.34315 23 4V20C23 21.6569 21.6569 23 20 23H4C2.34315 23 1 21.6569 1 20V4C1 2.34315 2.34315 1 4 1H20ZM20 3C20.5523 3 21 3.44772 21 4V20C21 20.5523 20.5523 21 20 21H4C3.44772 21 3 20.5523 3 20V4C3 3.44772 3.44772 3 4 3H20Z" fill="#0077b5"/>
+                    </svg>
+                </a>
+                <a href="https://github.com/KyleTchatchouaWatson" target="_blank" aria-label="GitHub">
+                    <svg width="28px" height="28px" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                        <path style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;fill-rule:evenodd;" d="M24,2.5a21.5,21.5,0,0,0-6.8,41.9c1.08.2,1.47-.46,1.47-1s0-1.86,0-3.65c-6,1.3-7.24-2.88-7.24-2.88A5.7,5.7,0,0,0,9,33.68c-1.95-1.33.15-1.31.15-1.31a4.52,4.52,0,0,1,3.29,2.22c1.92,3.29,5,2.34,6.26,1.79a4.61,4.61,0,0,1,1.37-2.88c-4.78-.54-9.8-2.38-9.8-10.62a8.29,8.29,0,0,1,2.22-5.77,7.68,7.68,0,0,1,.21-5.69s1.8-.58,5.91,2.2a20.46,20.46,0,0,1,10.76,0c4.11-2.78,5.91-2.2,5.91-2.2a7.74,7.74,0,0,1,.21,5.69,8.28,8.28,0,0,1,2.21,5.77c0,8.26-5,10.07-9.81,10.61a5.12,5.12,0,0,1,1.46,4c0,2.87,0,5.19,0,5.9s.39,1.24,1.48,1A21.5,21.5,0,0,0,24,2.5"/>
+                    </svg>
+                </a>
+            </section>
+            <p>© 2025 Kyle Tchatchoua Watson — All rights reserved</p>
+        </div>
+    </footer>
+</body>
 </html>
